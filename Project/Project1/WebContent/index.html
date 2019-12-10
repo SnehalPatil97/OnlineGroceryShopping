@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DS Shopping Mart</title>
+<script type="text/javascript" src="login.js"></script>
+</head>
+<style>
+
+
+*, html {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body {
+  display: grid;
+  justify-items: center;
+	 
+	 background-image:url(log1.jpg);
+	 background-size:100%;
+	 background-repeat:repeat;
+ }
+}
+
+form {
+  display: grid;
+  justify-items: center;
+}
+
+div {
+  width:100%;
+  justify-items: center;
+  padding:1em;
+}
+
+.Signup {
+  min-width:200px;
+  max-width:400px;
+  padding:.8em 2em;
+}
+
+.login-container {
+  min-width:200px;
+  max-width:400px;
+  background:#fff;
+  border:1px solid #ccc;
+  margin-top:30px;
+  border-radius:8px;
+}
+
+label, input {
+  justify-items: center;
+  display:block;
+  padding: 1.2em;
+}
+
+input {
+  width: 100%;
+  border:1px solid #ccc;
+  border-radius:4px;
+  line-height: 1;
+}
+
+button[type="submit"] {
+  width:100%;
+  padding:10px;
+  background:#0097bd;
+  color:white;
+  font:bold 14px Times New Roman, sans-serif;
+  border:none;
+  border-radius:4px;
+  line-height: 1;
+  cursor:pointer;
+  border:1px solid #fff;
+  box-shadow: inset 0 0 2px 0 #333;
+}
+
+button[type="submit"]:hover {
+  background:#4CAF50;
+  color:white;
+  transition: background ease-in .1s;
+}
+
+button {
+  background-color:#0097bd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+	
+	background: #4CAF50;
+}
+
+
+
+
+
+/***TYPOGRAPHY***/
+h1 {
+  font: bold 32px Arial, sans-serif;
+  text-align:center;
+  text-shadow: 1px 2px 0 rgba(50, 50, 50, 0.8);
+  background-color:#fff;
+  color:transparent;
+  background-clip:text;
+}
+h3{
+font: bold 32px Times New Roman, sans-serif;
+ color:Green;
+ 
+}
+
+ p,label {
+  font: 14px/14px "Arial", sans-serif;
+  padding: .5em 0;
+  color: #666;
+}
+
+
+p,a, a:link, a:visited, a:hover, a:active {
+  font: 12px/14px "Arial", sans-serif;
+  color: #fff;
+}
+
+a:hover {
+  font: 12px/14px "Arial", sans-serif;
+  color: black;
+}
+
+@media (max-width: 799px) {
+  .login-container {
+    min-width:200px;
+    max-width:400px;
+    background:#fff;
+    border:none;
+    margin-top:0;
+  }
+}
+</style>
+
+<body>
+
+<div class="login-container">
+  <form name="loginForm" action="custLogin" onsubmit="return validate();"  method="get">
+  			<div>
+    			<h1>Login</h1>
+ 			 </div>
+ 			 
+      		<div>
+       		 <label for="name">Username*</label>
+       		 <input type="email" placeholder="Username" id="username" name="username" >
+      		</div>
+     		 
+     		 <div>
+        		<label for="password">Password*</label>
+       			 <input type="password" placeholder="Password" id="password" name="password" >
+	 		</div>
+	 		
+	 		<div>
+      <button type="submit">Submit</button>
+   </div>
+   </form>
+	 </div>
+        <p><a href="forgot.html" style="font-size:16">Forgot Password?</a>  |   <a href="Admin_login.html"style="font-size:16">Admin Login</a></p>
+	 
+
+
+<br><p>Don't have an account? <br><a href="register.html"><button type="button" class="Signup">Signup</button></a></p></div>
+ 
+ <!--Login-container-->
+ 
+ </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE*html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Raleway",  sans-serif;}
+
+
+body{
+		background-color: gray;
+		
+	}
+
+input{
+  width:90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+   justify-items: center;
+}
+
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+ background-color:indigo;
+  color: white;
+  
+}
+
+.cancelbtn {
+  width: 20%;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.avatar {
+  width: 15%;
+  border-radius: 15%;
+}
+
+form{
+display :grid;
+justify-items: center;
+}
+.container {
+
+  padding: 20px;
+  min-width:500px;
+  max-width:900px;
+  background:#0097bd;
+  color: White;
+  border:1px solid #ccc;
+  margin-top:125px;
+  border-radius :8px;
+  
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<form name ="Admin Login" action="adminLogin" method="post">
+
+  
+
+  <div class="container">
+  <h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Admin Login</h1>
+	<div class="imgcontainer">
+    <img src="Admin-login.jpg" style="width:20%" class="avatar"></h2>
+    
+  </div>
+    <label for="uname"><b>E-mail</b></label>
+    <input type="email" placeholder="Enter E-mail" name="uname" required>
+	<br>
+
+    <label for="psw"><b>Password &nbsp &nbsp &nbsp</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+	<br>
+    <button type="submit">Login</button>
+
+	<br>
+    <label>
+        <span class="psw"> <a href="#">Forgot password?</a></span>
+    </label>
+  </div>
+  <br>
+  
+</form>
+
+</body>
+</html>

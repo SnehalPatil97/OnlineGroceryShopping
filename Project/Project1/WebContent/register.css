@@ -1,0 +1,80 @@
+ *{
+	 margin:0;
+	 padding:0;
+ }
+ body{
+	 background-image:url(regi.jpg);
+	 background-size:cover;
+	 background-repeat:No-repeat;
+ }
+ 
+ h1{
+	 Text-align:center;
+	 padding:20px;
+	 color:white;
+ }
+ h2{
+	 Text-align:center;
+	 padding:20px;
+ }
+ title{
+	 color:black;
+ }
+.register{
+	 background:teal;
+	 width:400px;
+	 margin: 0px 0px 0px 430px;
+	 color:white;
+	 font-size:18px;
+	 padding:20px;
+	 border-radius:10px;
+	 
+ }
+ form {
+	margin-left:50px;
+}
+#register{
+	 margine-left:50px;
+ }
+ label{
+	 color:white;
+	 font-family:Times New Roman;
+	 font-size:18px;
+ }
+ input{
+	width:240px;
+	border:none;
+	border-radius:3px;
+	outline:0;
+	padding:7px;
+ }
+ #name{
+	 width:300px;
+	border:none;
+	border-radius:3px;
+	outline:0;
+	padding:7px;
+ }
+ #num{
+	width:300px;
+	border:none;
+	border-radius:3px;
+	outline:0;
+	padding:7px;
+ }
+ #sub{
+	 background:green;
+	 color:white;
+	font:bold 14px Times New Roman, sans-serif;
+	 width: 150px;
+    padding: 7px;
+    font-weight: 600;
+	border:none;
+	border-radius:6px;
+	outline:0;
+ }
+ #sub:hover {
+	background:indigo;
+	color:white;
+	transition: background ease-in .1s;
+ }

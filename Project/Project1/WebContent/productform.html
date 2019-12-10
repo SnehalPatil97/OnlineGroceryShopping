@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add product</title>
+<style>
+h1{color:white; font-size:40px;}
+body{
+ display: grid;
+  justify-items: center;
+  padding-top:300px;
+	 background-image:url(IMG_3656.jpg);
+	 background-size:100%;
+	 background-repeat:repeat;
+	 color:gray;
+}
+button[type="submit"] {
+  width:40%;
+  height:10%;
+  padding:10px;
+  background:#0097bd;
+  color:black;
+  font:bold 14px Times New Roman, sans-serif;
+  border-radius:4px;
+  cursor:pointer;
+  }
+  button[type="submit"]:hover {
+  background:indigo;
+  color:white;
+  transition: background ease-in .1s;
+}
+
+</style>
+</head>
+<body>
+
+  
+<h1>Add New Product</h1>  
+
+<form action="addproduct.jsp" method="post">  
+<table>  
+<tr><td>Product Name</td><td><input type="text" name="product_Name" required/></td></tr>  
+<tr><td>Product Price</td><td>  
+<input type="text" name="product_Price" required/></td></tr>  
+<tr><td>Product Description</td><td><input type="text" name="product_Desc" required/></td></tr>  
+
+<tr><td colspan="2"><button type="submit">Add product</button></td></tr>  
+</table>  
+</form>  
+</body>
+</html>
